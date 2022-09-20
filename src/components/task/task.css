@@ -1,0 +1,26 @@
+.container-task {
+    display: flex;
+    margin-top: 20px;
+    width: 600px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 187, 255, 0.35);
+}
+
+.task-icon {
+    font-size: 25px;
+    color: red;
+}
+
+.task-completed {
+    font-size: 20px;
+    text-decoration: line-through ;
+    color: red;
+}
+
+.task {
+    font-size: 20px;
+    color: blue;
+}

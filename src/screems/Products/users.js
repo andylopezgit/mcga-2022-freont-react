@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Tableusers } from "../../components/Users/tableUsers";
 import style from "./users.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Users = () => {
+  const navigate = useNavigate();
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -15,9 +17,14 @@ const Users = () => {
       });
   }, [users]);
 
+  const goToHome = () => {
+    navigate("/home");
+  };
+
   return (
     <div className={style.container}>
-      <h1>Componente Tabla</h1>
+      <h1>Componente Users</h1>
+      <button onClick={goToHome}>Ir a Home</button>
       <table>
         <tr>
           <th>Id</th>

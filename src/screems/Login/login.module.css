@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #75c7ff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+
+}
+
+.form input {
+    width: 350px;
+    height: 30px;
+    margin: 6px;
+    border: none;
+    padding: 4px;
+}
+
+.btn {
+    height: 35px;
+    color: white;
+    width: 360px;
+    margin: 4px;
+    background-color: #ffbf75;
+    font-size: 18px;
+    border: none;
+    padding: 4px;
+}

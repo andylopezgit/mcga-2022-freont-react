@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Task } from "../task/task";
 import { InputAddTask } from "../inputAddTask/inputTask";
+import styles from "./index.module.css";
 
 function ListTask() {
   const [tasks, setTasks] = useState([]);
@@ -18,9 +19,13 @@ function ListTask() {
     <>
       <h2>Componente lista de tareas</h2>
       <InputAddTask sendTask={addTasks} />
-      <div>
+      <div className={styles.layout}>
         {tasks.map((item) => {
-          return <h1>{JSON.stringify(item)}</h1>;
+          return (
+            <Task task={item.text} completed={item.completed}>
+              {JSON.stringify(item)}
+            </Task>
+          );
         })}
       </div>
     </>

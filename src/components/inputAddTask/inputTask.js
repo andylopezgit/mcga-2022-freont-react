@@ -4,20 +4,25 @@ import { Task } from "../task/task";
 import { v4 as uuidv4 } from "uuid";
 
 const InputAddTask = (props) => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(" ");
 
   const handleChange = (e) => {
     setInput(e.target.value);
   };
 
+  const resetInput = () => {
+    setInput(" ");
+  };
+
   const newTask = (e) => {
     e.preventDefault();
+    const textUpperCase = input.toUpperCase();
     const taskNew = {
       id: uuidv4(),
-      text: input,
+      text: textUpperCase,
       completed: false,
     };
-
+    resetInput();
     props.sendTask(taskNew);
   };
 
@@ -28,6 +33,7 @@ const InputAddTask = (props) => {
           type="text"
           onChange={handleChange}
           placeholder="Ingrese una tarea"
+          value={input}
         />
         <button type="submit" value="Add" className={styles.btn}>
           Add

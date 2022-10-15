@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Task } from "../task/task";
 import { InputAddTask } from "../inputAddTask/inputTask";
 
 function ListTask() {
   const [tasks, setTasks] = useState([]);
 
-  const addTasks = (task) => {
-    console.log("tarea agregada");
+  const addTasks = async (task) => {
+    console.log("Llega la tarea a list task");
     console.log(task);
+    await setTasks([...tasks, task]);
   };
+
+  useEffect(() => {
+    console.log("desde el use efect", tasks);
+  });
   return (
     <>
       <h2>Componente lista de tareas</h2>
       <InputAddTask sendTask={addTasks} />
       <div>
-        {/*  muestro una lista de componentes task*/}
-        {tasks.map((task) => (
-          <Task />
-        ))}
+        {tasks.map((item) => {
+          return <h1>{JSON.stringify(item)}</h1>;
+        })}
       </div>
     </>
   );

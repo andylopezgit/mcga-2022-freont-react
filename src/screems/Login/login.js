@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "../../components/links";
+//import { Link } from "../../components/links";
 import styles from "./login.module.css";
 import { useNavigate } from "react-router-dom";
+//import { Button } from "../../components/button/button";
 
 const Login = () => {
   const [user, setUser] = React.useState("");
@@ -30,9 +31,12 @@ const Login = () => {
       <form action="" className={styles.form} onClick={onLogin}>
         <input type="text" placeholder="User" onChange={onUser} />
         <input type="password" placeholder="Password" onChange={onPass} />
-        <input type="submit" value="Login" className={styles.btn} />
+        <input type="submit" value="Loginn" className={styles.btn} />
         {/*<Link text={"Login"} to={"/home"} style={styles.btn} />*/}
       </form>
+      {/*<Button name="Eliminar">*/}
+      {/*  como Child*/}
+      {/*</Button>*/}
     </div>
   );
 };

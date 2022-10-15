@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    padding: 1rem;
+    background-color: #ffbf75;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}

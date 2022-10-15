@@ -32,7 +32,7 @@ function Login() {
         <input type="text" onChange={handleUser} />
         <label htmlFor="">Pass:</label>
         <input type="password" onChange={handlePass} />
-        <input type="submit" value="Login" className="btnLogin" />
+        <input type="submit" value="Loginn" className="btnLogin" />
       </form>
     </section>
   );

@@ -7,6 +7,15 @@ const Users = () => {
   const navigate = useNavigate();
   const [users, setUsers] = useState([]);
 
+  // useEffect(() => {
+  //   fetch("nombres.json").then((response) => {
+  //     return console.log(response.json());
+  //   });
+  //   // .then((datos) => {
+  //   //   setUsers(datos);
+  //   // });
+  // }, []);
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => {

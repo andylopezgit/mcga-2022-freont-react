@@ -6,8 +6,13 @@ import { useNavigate } from "react-router-dom";
 
 function PublicView() {
   const navigate = useNavigate();
+
   const onLogin = () => {
     navigate("/login");
+  };
+
+  const onRegister = () => {
+    navigate("/register");
   };
 
   return (
@@ -19,7 +24,9 @@ function PublicView() {
             <button onClick={onLogin} id={styles.btnLogin}>
               Login
             </button>
-            <button id={styles.btnLogin}>Register</button>
+            <button id={styles.btnLogin} onClick={onRegister}>
+              Register
+            </button>
           </div>
         </header>
         <section>

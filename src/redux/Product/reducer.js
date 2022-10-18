@@ -2,10 +2,6 @@ import { ADD_ITEM, DELETE_ITEM } from "./types";
 
 const INITIAL_STATE = {
   count: 0,
-  // product: {
-  //   id: 0,
-  //   ..
-  // }
 };
 
 const reducer = (state = INITIAL_STATE, action) => {
@@ -28,3 +24,5 @@ const reducer = (state = INITIAL_STATE, action) => {
 };
 
 export default reducer;
+
+// como usar fetch o accion para trae o modificar algo en el estado

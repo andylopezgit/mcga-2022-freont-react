@@ -1,5 +1,5 @@
 import { GET_PRODUCTS } from "./types";
-
+//import
 const INITIAL_STATE = {
   product: [],
 };

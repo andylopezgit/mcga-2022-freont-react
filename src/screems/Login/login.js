@@ -31,7 +31,7 @@ const Login = () => {
       <form action="" className={styles.form} onClick={onLogin}>
         <input type="text" placeholder="User" onChange={onUser} />
         <input type="password" placeholder="Password" onChange={onPass} />
-        <input type="submit" value="Loginn" className={styles.btn} />
+        <input type="submit" value="Login" className={styles.btn} />
         {/*<Link text={"Login"} to={"/home"} style={styles.btn} />*/}
       </form>
       {/*<Button name="Eliminar">*/}

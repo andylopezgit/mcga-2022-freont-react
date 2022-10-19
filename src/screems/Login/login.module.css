@@ -5,7 +5,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #75c7ff;
+    background-color: rgba(117, 199, 255, 0.62);
 }
 
 .form {
@@ -19,20 +19,15 @@
 }
 
 .form input {
-    width: 350px;
-    height: 30px;
+    width: 370px;
+    height: 40px;
     margin: 6px;
     border: none;
     padding: 4px;
 }
 
 .btn {
-    height: 35px;
     color: white;
-    width: 360px;
-    margin: 4px;
-    background-color: #ffbf75;
+    background-color: rgba(22, 115, 14, 0.53);
     font-size: 18px;
-    border: none;
-    padding: 4px;
 }

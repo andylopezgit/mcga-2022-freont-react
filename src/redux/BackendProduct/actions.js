@@ -51,7 +51,7 @@ export const setIsLoading = () => {
   };
 };
 
-export const dismissIsloading = () => {
+export const dismissIsLoading = () => {
   return {
     type: DISMISS_ISLOADING,
     isLoadingProducts: false,

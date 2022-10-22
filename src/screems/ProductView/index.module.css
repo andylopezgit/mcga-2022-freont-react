@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}

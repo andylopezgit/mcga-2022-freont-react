@@ -11,6 +11,7 @@ import Practice from "./screems/Practice/practice";
 import { Layout } from "./components/Layout/layout";
 import PublicView from "./screems/PublicPage/PublicView";
 import Register from "./screems/Register/RegisterView";
+import ProductsView from "./screems/ProductView/ProductsView";
 
 // darle estilos al layout, vista de productos con una tabla, crear un componente compartido, agregarle footer al layout
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/layouttask" element={<LayoutTask />} />
         <Route path="/practice" element={<Practice />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/product" element={<ProductsView />} />
       </Routes>
       <div className="App"></div>
     </Layout>

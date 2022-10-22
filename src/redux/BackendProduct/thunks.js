@@ -11,9 +11,10 @@ export const getProducts = async (dispatch) => {
     "https://mcga-2022-backend.vercel.app/api/products"
   );
   //let response = await fetch("http://localhost:3000/api/products");
-  const data = await response?.json();
+  let data = await response?.json();
+  console.log("esto es la data", data.data);
   if (data) {
-    dispatch(setProducts(data));
+    dispatch(setProducts(data.data));
     dispatch(dismissIsLoading());
   }
   if (data.status === 400) {

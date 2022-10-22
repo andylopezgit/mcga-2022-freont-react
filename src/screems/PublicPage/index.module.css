@@ -11,7 +11,7 @@
     font-weight: bold;
 }
 
-header {
+.header {
     display: flex;
     height: 100px;
     justify-content: space-between;
@@ -34,7 +34,7 @@ header {
 
 }
 
-section {
+.section {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -42,7 +42,7 @@ section {
     background-color: cornflowerblue;
 }
 
-section article {
+.section .article {
     text-align: center;
 }
 

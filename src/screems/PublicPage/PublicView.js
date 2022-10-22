@@ -18,7 +18,7 @@ function PublicView() {
   return (
     <React.Fragment>
       <div className={styles.container}>
-        <header>
+        <header className={styles.header}>
           <h1 className={styles.title}>MCGA 2022</h1>
           <div>
             <button onClick={onLogin} id={styles.btnLogin}>
@@ -29,8 +29,8 @@ function PublicView() {
             </button>
           </div>
         </header>
-        <section>
-          <article>
+        <section className={styles.section}>
+          <article className={styles.article}>
             <h2>Proyecto realizado en React.js + Node.js</h2>
             <div className={styles.layoutLogos}>
               <img

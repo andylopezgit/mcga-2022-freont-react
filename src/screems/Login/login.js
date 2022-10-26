@@ -39,7 +39,7 @@ const Login = () => {
       {/*  como Child*/}
       {/*</Button>*/}
 
-      <FormShared />
+      <FormShared style={styles} />
     </div>
   );
 };

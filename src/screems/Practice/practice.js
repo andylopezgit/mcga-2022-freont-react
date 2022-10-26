@@ -10,6 +10,7 @@ function Practice() {
   const { count } = useSelector((state) => state.counter);
   const { product } = useSelector((state) => state.product);
 
+  console.log("produc", product);
   useEffect(() => {
     dispatch(() => getProducts(dispatch));
   }, []);

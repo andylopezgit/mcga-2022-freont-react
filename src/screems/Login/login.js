@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./login.module.css";
 import { useNavigate } from "react-router-dom";
 //import { Button } from "../../components/button/button";
+import FormShared from "../../components/SharedComponents/FormShared";
 
 const Login = () => {
   const [user, setUser] = React.useState("");
@@ -37,6 +38,8 @@ const Login = () => {
       {/*<Button name="Eliminar">*/}
       {/*  como Child*/}
       {/*</Button>*/}
+
+      <FormShared />
     </div>
   );
 };

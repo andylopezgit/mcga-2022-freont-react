@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import "./login.css";
-import { Route, Router } from "react-router-dom";
+import {Route, Router} from "react-router-dom";
+import formShared from "../SharedComponents/FormShared";
+import FormShared from "../SharedComponents/FormShared";
 
 function Login() {
   const [user, setUser] = React.useState([]);
@@ -26,16 +28,19 @@ function Login() {
   };
 
   return (
-    <section>
-      <form action="" className="formLogin" onSubmit={login}>
-        <label htmlFor="">User:</label>
-        <input type="text" onChange={handleUser} />
-        <label htmlFor="">Pass:</label>
-        <input type="password" onChange={handlePass} />
-        <input type="submit" value="Loginn" className="btnLogin" />
-      </form>
-    </section>
+      <section>
+        <form action="" className="formLogin" onSubmit={login}>
+          <label htmlFor="">User:</label>
+          <input type="text" onChange={handleUser}/>
+          <label htmlFor="">Pass:</label>
+          <input type="password" onChange={handlePass}/>
+          <input type="submit" value="Loginn" className="btnLogin"/>
+        </form>
+
+        <FormShared/>
+
+      </section>
   );
 }
 
-export { Login };
+export {Login};

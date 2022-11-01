@@ -34,3 +34,12 @@
     background-color: rgba(22, 115, 14, 0.53);
     font-size: 18px;
 }
+
+.btn2 {
+    color: white;
+    width: 98%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(148, 14, 57, 0.53);
+    font-size: 18px;
+}

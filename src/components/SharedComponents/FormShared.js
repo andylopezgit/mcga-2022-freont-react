@@ -34,7 +34,7 @@ const FormShared = ({ style }) => {
       <InputShared type="text" myFunc={handleChangeUser} value={user} />
       <InputShared type="password" myFunc={handleChangePass} value={password} />
       <ButtonShared
-        className={style.btn}
+        className={style.btn2}
         type="button"
         text="Aceptar"
         onClick={() => login()}

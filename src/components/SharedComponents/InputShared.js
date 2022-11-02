@@ -1,14 +1,8 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
-const InputShared = ({ type, value, myFunc, className }) => {
-  return (
-    <input
-      className={className}
-      type={type}
-      value={value}
-      onChange={myFunc}
-    ></input>
-  );
+const InputShared = ({ type, name, register }) => {
+  return <input {...register(name)} type={type} name={name}></input>;
 };
 
 export default InputShared;

@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import ButtonShared from "./ButtonShared";
 import InputShared from "./InputShared";
 import styles from "../../screems/Login/login.module.css";
+import { useForm } from "react-hook-form";
 
 const FormShared = ({ style }) => {
   const INITIAL_STATE = "";
   const [user, setUser] = useState(INITIAL_STATE);
   const [password, setPassword] = useState(INITIAL_STATE);
+
+  const { register, handleSubmit, watch } = useForm();
+
+  const onSubmit = (data) => console.log("desde el onsubmit", data);
 
   const handleChangeUser = (e) => {
     const user = e.target.value;
@@ -29,15 +34,15 @@ const FormShared = ({ style }) => {
     console.log(user, password);
   };
   return (
-    <form className={style.form}>
+    <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
       <span>Desde Form Shared</span>
-      <InputShared type="text" myFunc={handleChangeUser} value={user} />
-      <InputShared type="password" myFunc={handleChangePass} value={password} />
+      <InputShared type="text" name="valUser" register={register} />
+      <InputShared type="password" name="passUser" register={register} />
       <ButtonShared
-        className={style.btn2}
-        type="button"
+        className={style.btn}
         text="Aceptar"
-        onClick={() => login()}
+        // onClick={() => login()}
+        type="submit"
       ></ButtonShared>
     </form>
   );
